@@ -1,7 +1,7 @@
 package com.tutorialspring.webservice.config;
 
 import com.tutorialspring.webservice.entities.User;
-import com.tutorialspring.webservice.repositories.UseRepository;
+import com.tutorialspring.webservice.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +13,7 @@ import java.util.Arrays;
 @Profile("test")
 public class TestConfig implements CommandLineRunner {
   @Autowired
-  private UseRepository useRepository;
+  private UserRepository useRepository;
 
   @Override
   public void run(String... args) throws Exception {
